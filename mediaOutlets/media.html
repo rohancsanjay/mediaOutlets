@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Area</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      if (typeof jQuery == "undefined") {
+        alert("Jquery is not installed");
+        }
+      else {
+        alert("Jquery is installed correctly");
+      }
+      $(document).ready(function(){
+          $("#wpButton").click(function() {
+
+            $("iframe").attr("src","https://www.washingtonpost.com/");
+
+          });
+          $("#viceButton").click(function() {
+
+            $("iframe").attr("src","https://www.vice.com/en_us");
+
+          });
+          $("#foxButton").click(function() {
+
+            $("iframe").attr("src","http://www.foxnews.com/");
+
+          });
+          $("#nbcButton").click(function() {
+
+            $("iframe").attr("src","http://www.nbcnews.com");
+
+          });
+          $("#changeButton").click(function() {
+
+            $(".backdrop").css("background-color","black");
+            $(".title").css("color","white");
+            $("body").css("background-color", "black");
+            $("p").css("color", "white");
+          });
+          $("#onButton").click(function(){
+            $(".backdrop").css("background-color","white");
+            $(".title").css("color","black");
+            $("body").css("background-color", "white");
+            $("p").css("color", "black");
+          });
+      });
+    </script>
+  <div class="backdrop">
+    <h1 class="title">Media Outlets</h1>
+    <button id="wpButton" class="topButton" name="button">Washington Post</button>
+    <button id="viceButton"  class="topButton" name="button">Vice</button>
+    <button id="foxButton"  class="topButton" name="button">Fox</button>
+    <button id="nbcButton" class="topButton" name="button">NBC</button>
+    <p>Turn the lights off?</p>
+    <button id="changeButton" name="button">Off!</button>
+    <button id="onButton" name="button">On!</button>
+    <br>
+    <iframe src="https://www.bbc.com/" width="1100" height="900"></iframe>
+
+  </div>
+        </body>
+</html>

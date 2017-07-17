@@ -1,0 +1,45 @@
+* {
+font-family: 'Fjalla One', sans-serif;
+padding: 0px;
+margin: 4px;
+/*background-color: white;*/
+}
+.backdrop {
+  /*background-color: white;*/
+  height: inherit;
+  width: inherit;
+}
+
+iframe{
+  border: none;
+}
+.title {
+  text-align: center;
+}
+
+.topButton {
+  border-radius: 20%;
+  margin-left: 50px;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+#wpButton {
+  background-color: black;
+  color: white;
+}
+#viceButton {
+  background-color: white;
+}
+#foxButton {
+  background-color: #183a52;
+  color: white;
+}
+#nbcButton {
+  background-color: red;
+  color: white;
+}
